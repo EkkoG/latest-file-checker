@@ -1,0 +1,11 @@
+name: "OpenWrt packages new version check"
+description: "A tool to check a new version of a file"
+author: ekkog
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
+    - name: Check
+      shell: bash
+      run: check.sh
