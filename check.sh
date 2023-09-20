@@ -56,8 +56,6 @@ sed -i "s/$VERSION_FILED:=.*/$VERSION_FILED:=$latest_version_number/g" $MAKEFILE
 sed -i "s/PKG_RELEASE:=.*/PKG_RELEASE:=1/g" $MAKEFILE
 sed -i "s/$HASH_FILED:=.*/$HASH_FILED:=$hash/g" $MAKEFILE
 
-exit 0
-
 git config user.name "bot"
 git config user.email "bot@github.com"
 git add .
